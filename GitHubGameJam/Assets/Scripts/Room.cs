@@ -5,12 +5,14 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     public GridRoomInfo roomInfo;
+
+    public SpriteRenderer iconRender;
     // Start is called before the first frame update
  
     public void SetRoom(GridRoomInfo room)
     {
         roomInfo = room;
-        GetComponent<SpriteRenderer>().sprite = roomInfo.roomIcon;
+        iconRender.sprite = roomInfo.roomIcon;
 
     }
 }

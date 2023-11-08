@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2097548440139187815}
+  - component: {fileID: 2699330522677884192}
   m_Layer: 0
   m_Name: MapRoom
   m_TagString: Untagged
@@ -32,6 +33,19 @@ Transform:
   - {fileID: 3342657771768741143}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2699330522677884192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7368567841812208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd0f68bc1f2c92449830ef417565edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconRender: {fileID: 103862567434326242}
 --- !u!1 &9209782642537386024
 GameObject:
   m_ObjectHideFlags: 0

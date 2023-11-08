@@ -13,15 +13,17 @@ public class FiveXFiveGrid : MonoBehaviour
     public Sprite[] roomIcons = new Sprite[4];
 
     
-    void Start()
+    public void Start()
     {
         for(int i = 0; i < 25; i++)
         {
            
-           GridRoomInfo pom = new GridRoomInfo();
-           pom.Type = SetType(i);
-           pom.Lvl = lvl;
-           rooms[i].GetComponent<Room>().SetRoom(pom);
+            GridRoomInfo pom = new GridRoomInfo();
+            pom.Type = SetType(i);
+            pom.Lvl = lvl;
+            pom.roomIcon = SetSprite(pom.Type);
+            pom.sceneId = i;
+            rooms[i].GetComponent<Room>().SetRoom(pom);
             
         } 
     }
@@ -46,43 +48,52 @@ public class FiveXFiveGrid : MonoBehaviour
     
     public char SetType(int i)
     {
-        char c = ' ';
         int x = Random.Range(0, 10);
         switch (x)
         {
             case 0:
                 if (shopNum != 0)
                 {
-                    c = 'S';
                     shopNum-=1;
-                    break;
+                    return 'S';
                 } 
                 goto case 1;
             case 1:
                 if (treasureNum != 0)
                 {
-                    c = 'T';
+                    
                     treasureNum -= 1;
-                    break;
+                    return 'T';
                 }
                 goto case 2;
             case 2:
                 if (eliteNum != 0)
                 {
-                    c = 'E';
+                    
                     eliteNum -= 1;
-                    break;
+                    return 'E';
                 }
                 goto case default;
             default:
-                if(shopNum + eliteNum + treasureNum <= 25 - i)
+                if(shopNum + eliteNum + treasureNum >= 25 - i)
                 {
-                    x = Random.Range(0, 10);
-                    goto case 0;
+                    if (shopNum > 0)
+                    {
+                        shopNum -= 1;
+                        return 'S';
+                    }else if (eliteNum > 0)
+                    {
+                        eliteNum -= 1;
+                        return 'E';
+                    }
+                    else if(treasureNum>0)
+                    {
+                        treasureNum -= 1;
+                        return 'T';
+                    }
+                    return 'B';
                 }
-                c = 'B';
-                break;
+                return 'B';
         }
-        return c;
     }
 }
