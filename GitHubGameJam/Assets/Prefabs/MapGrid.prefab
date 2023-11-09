@@ -272,15 +272,15 @@ MonoBehaviour:
   - {fileID: 1741017276015061998}
   - {fileID: 3758787716758477214}
   - {fileID: 8546439548452534572}
-  shopNum: 0
-  treasureNum: 0
-  eliteNum: 0
-  lvl: 0
+  shopNum: 1
+  treasureNum: 3
+  eliteNum: 2
+  lvl: 1
   roomIcons:
   - {fileID: -2413806693520163455, guid: 1aea05ea4c8503a4d9e903c455f73e18, type: 3}
   - {fileID: 3625043607559282579, guid: 578829cad62b39b46acb8d85e700aa5e, type: 3}
-  - {fileID: 7482667652216324306, guid: 5140e18b7d383d74e89e8edeb1638fc4, type: 3}
   - {fileID: 7482667652216324306, guid: 71567874ca375e3469becb0fc240705c, type: 3}
+  - {fileID: 7482667652216324306, guid: 5140e18b7d383d74e89e8edeb1638fc4, type: 3}
 --- !u!1 &8876189337586079154
 GameObject:
   m_ObjectHideFlags: 0

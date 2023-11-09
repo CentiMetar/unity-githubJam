@@ -56,8 +56,8 @@ public class FiveXFiveGrid : MonoBehaviour
                 {
                     shopNum-=1;
                     return 'S';
-                } 
-                goto case 1;
+                }
+                break;
             case 1:
                 if (treasureNum != 0)
                 {
@@ -65,7 +65,7 @@ public class FiveXFiveGrid : MonoBehaviour
                     treasureNum -= 1;
                     return 'T';
                 }
-                goto case 2;
+                break;
             case 2:
                 if (eliteNum != 0)
                 {
@@ -73,7 +73,7 @@ public class FiveXFiveGrid : MonoBehaviour
                     eliteNum -= 1;
                     return 'E';
                 }
-                goto case default;
+                break;
             default:
                 if(shopNum + eliteNum + treasureNum >= 25 - i)
                 {
@@ -95,5 +95,6 @@ public class FiveXFiveGrid : MonoBehaviour
                 }
                 return 'B';
         }
+        return 'B';
     }
 }
