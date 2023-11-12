@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 137acc78e9cfbab4db4098ebdeebe8a9, type: 3}
+  m_Name: L180
+  m_EditorClassIdentifier: 
+  Look: {fileID: 2800000, guid: 804b86d9606fe7e4bacb797bdced53f3, type: 3}
+  prefab: {fileID: 2438501733484192683, guid: c9150da04b4957343a292a7cffd6455d, type: 3}
+  scaledVersion: {fileID: 11400000, guid: 4d513d39b04ca6a438903dc0604d66d4, type: 2}

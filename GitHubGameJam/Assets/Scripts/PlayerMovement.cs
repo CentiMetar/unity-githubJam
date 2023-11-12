@@ -17,6 +17,15 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         //Pomeranje
+
+        //E brt mozes da koristis rb.Velocity za movement bolje ti je jer ti stavlja taj speed koji stavis ovo ti je incrementalno
+        //Ili mozes samo mathf.clamp da koristis da clampujes max speed da nebi klizalo
+        //A za das koristi rb.addforce sa impulse modom ili koristi dve animacije fiksne za dash ovako ti je vise blink kao tp
+        //Mada nzm dal to hoces ali mi nema logike
+
+        //P.S. Isto uglavnom kad imenujes gledaj da su bool tipovi isGrounded, nemoras da menjas ali tako se uglavnom radi u industriji
+        //To ti se zovu state-ovi, isGrounded, isDead, isPoisoned itd.
+        //Dobro si odradio ui, ja bih sve u jednom skriptu ali ovako je preglednije bolje je  
         if(Input.GetKey("d"))
         {
             rb.AddForce(new Vector2(sidewaysForce * Time.deltaTime,0)/*,ForceMode2D.Impulse*/);  

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu]
 public class PlacableRooms : ScriptableObject
 {
-    public RawImage Look;
+    public Texture2D Look;
     public GameObject prefab;
     public PlacableRooms scaledVersion;
 }
