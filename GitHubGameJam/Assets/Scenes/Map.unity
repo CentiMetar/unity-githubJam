@@ -2109,6 +2109,8 @@ MonoBehaviour:
   avalibleRooms: []
   selectedRoom: 0
   isScaled: 0
+  rb2d: {fileID: 0}
+  clone: {fileID: 0}
 --- !u!114 &1660914856
 MonoBehaviour:
   m_ObjectHideFlags: 0
