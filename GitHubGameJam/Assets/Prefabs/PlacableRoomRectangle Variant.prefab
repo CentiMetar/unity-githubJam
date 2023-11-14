@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6062042501712549115}
   - component: {fileID: 910520816669482188}
-  m_Layer: 0
+  - component: {fileID: 7668941932701305748}
+  m_Layer: 7
   m_Name: Room (1)
-  m_TagString: Untagged
+  m_TagString: PlacedRoom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,6 +85,114 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &7668941932701305748
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487468988633729729}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 1
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!1 &6517669426554054898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560176899879015119}
+  m_Layer: 0
+  m_Name: RoomsNext (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &560176899879015119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6517669426554054898}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: -1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2454591317361321006}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6593216765960904250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6419566973413174396}
+  m_Layer: 0
+  m_Name: RoomsNext (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6419566973413174396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593216765960904250}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: -1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2454591317361321006}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2252787706439044900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92,13 +201,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1539297785797844182, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3750378478943108304, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4419148028502272778, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.9993
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4419148028502272778, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5248992
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4419148028502272778, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -132,6 +249,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5998058935609146868, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      propertyPath: roomPos.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998058935609146868, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      propertyPath: roomsNext.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5998058935609146868, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      propertyPath: 'roomPos.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6062042501712549115}
+    - target: {fileID: 5998058935609146868, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      propertyPath: 'roomsNext.Array.data[4]'
+      value: 
+      objectReference: {fileID: 6419566973413174396}
+    - target: {fileID: 5998058935609146868, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      propertyPath: 'roomsNext.Array.data[5]'
+      value: 
+      objectReference: {fileID: 560176899879015119}
     - target: {fileID: 6232986377397449422, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
       propertyPath: m_Name
       value: PlacableRoomRectangle Variant
@@ -139,6 +276,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4419148028502272778, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 6419566973413174396}
+    - targetCorrespondingSourceObject: {fileID: 4419148028502272778, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 560176899879015119}
     - targetCorrespondingSourceObject: {fileID: 4419148028502272778, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6062042501712549115}

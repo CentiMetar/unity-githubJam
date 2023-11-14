@@ -15,3 +15,11 @@ MonoBehaviour:
   Look: {fileID: 2800000, guid: 0f75ce62a680bf24493ca7ae3ff5d6ec, type: 3}
   prefab: {fileID: 6232986377397449422, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
   scaledVersion: {fileID: 11400000, guid: 64e9188eee1b88245b4ac2e880e739d6, type: 2}
+  aroundRoomRaycastPositions:
+  - {fileID: 9217765494070080350, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+  - {fileID: 1441614237587542459, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+  - {fileID: 3750378478943108304, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+  - {fileID: 6006212088142390524, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+  roomsRaycastPositions:
+  - {fileID: 5427561791395972714, guid: e8707bbe2fe4c254e88d8a390f149af5, type: 3}
+  isPlaced: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2097548440139187815}
   - component: {fileID: 2699330522677884192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MapRoom
   m_TagString: GridRoom
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 3342657771768741143}
   - component: {fileID: 103862567434326242}
   - component: {fileID: 4500362811507530517}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: GridRoom
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.02654934, y: 0}
+  m_Offset: {x: -0.010961294, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -175,5 +175,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.4629822, y: 1.4629822}
+  m_Size: {x: 1.2447495, y: 1.2447495}
   m_EdgeRadius: 0

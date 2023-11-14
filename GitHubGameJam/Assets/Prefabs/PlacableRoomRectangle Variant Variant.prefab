@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3120861640548348916, guid: 226eb03d22bac354fb6ae388ea4252ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5315239790456946154, guid: 226eb03d22bac354fb6ae388ea4252ec, type: 3}
       propertyPath: m_Name
       value: PlacableRoomRectangle Variant Variant
@@ -59,6 +63,18 @@ PrefabInstance:
     - target: {fileID: 6062042501712549115, guid: 226eb03d22bac354fb6ae388ea4252ec, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419566973413174396, guid: 226eb03d22bac354fb6ae388ea4252ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419566973413174396, guid: 226eb03d22bac354fb6ae388ea4252ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6966952739893738618, guid: 226eb03d22bac354fb6ae388ea4252ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
