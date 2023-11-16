@@ -6,6 +6,7 @@ public class PlacableRoom : MonoBehaviour
 {
     public Transform[] roomPos = new Transform[8];
     public Transform[] roomsNext = new Transform[10];
+    public bool overlapping = false;
     public bool isNextToRoom()
     {
 
@@ -51,5 +52,12 @@ public class PlacableRoom : MonoBehaviour
             }
         }
         return false;
+    }
+    void OnCollisionStay2D(Collision2D coll)
+    {
+        if (coll.gameObject.CompareTag("PlacedRoom"))
+        {
+            overlapping = true;
+        }
     }
 }

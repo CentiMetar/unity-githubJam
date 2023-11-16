@@ -52,6 +52,18 @@ public class PlayerMapControler : MonoBehaviour
             else
             {
                 isOutofbounds = false;
+                if (clone != null )
+                {
+                    Destroy(clone);
+                }
+            }
+            if (clone != null)
+            {
+                if (clone.GetComponent<PlacableRoom>().overlapping)
+                {
+                    isOutofbounds = true;
+                    Destroy(clone);
+                }
             }
             if (Input.GetMouseButtonDown(0) && clone != null && clone.GetComponent<PlacableRoom>().isNextToRoom())
             {

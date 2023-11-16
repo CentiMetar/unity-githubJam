@@ -129,7 +129,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
 --- !u!1 &4006122853704007471
 GameObject:
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 5998058935609146868}
   m_Layer: 7
   m_Name: PlacableRoom
-  m_TagString: Untagged
+  m_TagString: PlacedRoom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,6 +277,7 @@ MonoBehaviour:
   - {fileID: 1441614237587542459}
   - {fileID: 3750378478943108304}
   - {fileID: 6006212088142390524}
+  overlapping: 0
 --- !u!1 &7809056097967295384
 GameObject:
   m_ObjectHideFlags: 0
