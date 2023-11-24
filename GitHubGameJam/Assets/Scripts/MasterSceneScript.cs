@@ -8,6 +8,7 @@ public class MasterSceneScript : MonoBehaviour
 
     public char[] roomAttributes = new char[5];
     public int sceneToLoad = 0;
+    public int eliteNum = 0;
     private void Awake()
     {
         if (instance != null)
@@ -26,6 +27,19 @@ public class MasterSceneScript : MonoBehaviour
     {
         this.sceneToLoad = sceneToLoad;
         this.roomAttributes = roomAttributes;
-        
+        SceneManager.LoadScene(sceneToLoad);
+        for(int i = 0; i < 5;i++) {
+            if (roomAttributes[i] == 'E') eliteNum++;
+
+        }
+    }
+    public bool SpawnElite()
+    {
+        if (eliteNum > 0)
+        {
+            eliteNum--;
+            return true;
+        }
+        return false;
     }
 }
